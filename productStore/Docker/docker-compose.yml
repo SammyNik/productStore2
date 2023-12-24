@@ -1,0 +1,9 @@
+﻿services:
+  store-db:
+    container_name: storedb
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "postgres"
